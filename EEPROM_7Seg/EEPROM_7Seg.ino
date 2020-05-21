@@ -8,7 +8,7 @@ const byte Addr[] = {8,9,10,11};
 #define OE 12
 
 void setup() {
-  // put your setup code here, to run once:
+  // To run once:
 
   for(int n = 0; n < 8; n++) {
     pinMode(Data[n], INPUT); // Configure Data pins as output
@@ -24,7 +24,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
   // Count from 0-16 & parse into bits to config the address
   for(int x = 0; x < 16; x++) {
